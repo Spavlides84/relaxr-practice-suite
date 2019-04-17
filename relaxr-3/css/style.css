@@ -1,0 +1,360 @@
+
+/******************************************
+  BASE STYLES
+******************************************/
+
+html {
+  font-size: 20px;
+}
+body {
+  color: #f0efef;
+  line-height: 1.4;
+  color: #606161;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+}
+a {
+  text-decoration: none;
+}
+.logo {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+.cta {
+  cursor: pointer;
+}
+
+/******************************************
+  HEADER
+******************************************/
+
+header {
+  background: #033048;
+  padding: 25px 50px;
+}
+header nav {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+}
+header .logo {
+  color: #fff;
+}
+header nav .links {
+  display: flex;
+  align-self: center;
+}
+header nav .links div {
+  margin: 0px 20px;
+}
+header nav .links div a {
+  color: #f9e42e;
+}
+header nav .hamburger {
+  display: none;
+}
+header nav .line {
+  width: 3em;
+  height: .3em;
+  background: #f9e42e;
+  border-radius: 1em;
+  margin-top: .25em;
+}
+header nav .line:first-child {
+  margin-top: .4em;
+}
+header .dropdown {
+  overflow: hidden;
+  height: 0px;
+  transition: height 1s;
+}
+header .dropdown div {
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+}
+header .dropdown div:last-child {
+  border-bottom: none;
+}
+header .dropdown div a {
+  color: #f9e42e;
+}
+
+/******************************************
+  FOOTER
+******************************************/
+
+#bottom-cta {
+  background: #f9e42e;
+  padding: 30px;
+  text-align: center;
+}
+footer {
+  background: #121212;
+  padding: 65px 0 45px;
+  text-align: center;
+}
+footer .logo {
+  color: #f9e42e;
+}
+footer .social {
+  padding: 2.5rem 0px;
+}
+footer a {
+  margin: 25px;
+}
+footer .copyright {
+  color: #fff;
+  font-weight: 600;
+}
+
+/******************************************
+  POPUP
+******************************************/
+
+#popup-container {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#popup-container.hidden {
+  display: none;
+}
+#signup-popup {
+  text-align: center;
+  font-weight: bold;
+
+  padding: 40px;
+  background-color: white;
+  border: 5px solid grey;
+  border-radius: 20px;
+}
+#signup-popup a {
+  margin-top: 40px;
+  cursor: pointer;
+}
+
+/******************************************
+  INDEX
+******************************************/
+
+#hero {
+  height: 700px;
+  background-image: url(../images/header_bg.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  padding-top: 32px;
+}
+#hero h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #fff;
+  margin: 120px 0 90px;
+  font-weight: 600;
+}
+.button {
+  border-radius: 5px;
+  font-weight: 800;
+  padding: 12px 0;
+  width: 280px;
+  font-size: 2rem;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+.yellow {
+  background: #f9e42e;
+  color: #033048;
+}
+.blue {
+  background: #033048;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+#benefits {
+  padding: 50px;
+  max-width: 1000px;
+  margin: 0px auto;
+}
+#benefits h3 {
+  color: #033048;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+#benefits ul {
+  list-style: disc;
+  margin: 0px 30px;
+  margin-bottom: 50px;
+}
+
+#testimonial {
+  background-image: url(../images/testimonial_bg.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  padding: 70px 0 70px;
+  color: #fff;
+}
+blockquote {
+  font-size: 2rem;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  width: 75%;
+  margin: 0 auto;
+}
+blockquote span {
+  font-weight: 600;
+  display: block;
+  font-style: normal;
+}
+
+/******************************************
+  BLOG
+******************************************/
+
+#blog {
+  padding: 40px;
+
+  display: flex;
+  justify-content: center;
+}
+.content-control {
+  cursor: pointer;
+  color: #043049;
+  font-weight: 600;
+}
+#sidebar {
+  width: 250px;
+  flex-shrink: 0;
+  padding: 10px;
+  margin-left: 20px;
+}
+#sidebar h3 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 15px;
+  color: #043049;
+}
+#sidebar ul {
+  margin-bottom: 40px;
+}
+#sidebar ul li a {
+  color: #043049;
+}
+#sidebar p {
+  line-height: 1.1;
+  margin-bottom: 40px;
+}
+#sidebar img {
+  border: 1px solid black;
+  padding: 2px;
+}
+.post {
+  max-width: 700px;
+  border-bottom: 1px solid #043049;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+}
+.post h2 {
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 1.3;
+  margin-bottom: 30px;
+}
+.post h2 a {
+  color: #043049;
+}
+.post img {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.post-content {
+  font-size: 1rem;
+  line-height: 1.333;
+  color: #606161;
+}
+.post-content:first-of-type:first-letter {
+  float: left;
+  font-size: 5rem;
+  line-height: 65px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+  font-weight: 600;
+}
+.readmore {
+  text-align: right;
+  margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+
+/******************************************
+  HEADER
+******************************************/
+
+  header {
+    padding: 10px;
+  }
+  header nav .links {
+    display: none;
+  }
+  header nav .hamburger {
+    display: initial;
+  }
+  header .dropdown.expand {
+    height: 184px;
+  }
+
+/******************************************
+  INDEX
+******************************************/
+
+  #hero {
+    height: auto;
+    padding: 30px 0 50px;
+  }
+  #hero h2 {
+    margin: 40px 0 60px;
+  }
+
+/******************************************
+  BLOG
+******************************************/
+
+  #blog {
+    padding: 20px;
+  }
+  #sidebar {
+    width: auto;
+    margin: 0px;
+  }
+  #sidebar img {
+    display: none;
+  }
+
+  /********************************
+768 px size
+*****************************/
+
+@media (max-width: 768px) {
+
+  html {
+    font-size: 18px;
+  }
+  #blog {
+    display: block;
+  }
+}
